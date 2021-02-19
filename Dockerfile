@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
   maven \
   curl
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash - \
   && apt-get install -y nodejs
 
 CMD /bin/bash  
